@@ -1,3 +1,5 @@
+<!-- http://localhost/yourfilename.php -->
+
 <?php
 // database connection code
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
@@ -28,7 +30,7 @@ $sql = 'SELECT * FROM registration';
    
    
    while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
-      echo "EMP ID :{$row['id']}  <br> ".
+      echo "EMP ID :{$row['Id']}  <br> ".
          "EMP First NAME : {$row['fname']} <br> ".
          "EMP middle name : {$row['mname']} <br> ".
 		 "EMP Last name : {$row['lname']} <br> ".
